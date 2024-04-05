@@ -9,7 +9,7 @@ export default function Login({navigation}) {
   <Box safeArea p="2" py="8" w="90%" maxW="290">
     <Center>
     <Image size={250} borderRadius={80} source={{
-  uri: "https://img.freepik.com/free-photo/fresh-coffee-cup-wooden-table-steam-rising-inviting-aroma-generated-by-artificial-intelligence_188544-85158.jpg?w=1060&t=st=1712225963~exp=1712226563~hmac=4ad9dc248fbb4167ee7552a58148118325ca5e6bf6a88975bf074dc7d8282645 "
+  uri: "https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg?w=1060 "
 }} alt="Alternate Text" />
 </Center>
   <Heading size="lg" fontWeight="600" color="coolGray.800" _dark={{
