@@ -6,6 +6,7 @@ import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import {useDispatch,useSelector} from "react-redux"
 import { fetchCategories, fetchOneCategoryProducts } from '../../store/categorieSlice';
 
+
 // import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 // import { faLocationDot } from '@fortawesome/free-solid-svg-icons/faLocationDot'
 // import { faBell } from '@fortawesome/free-solid-svg-icons/faBell'
@@ -31,12 +32,13 @@ setCategoryId(item.id)
   },[categoryId])
     return (
       <View style={{ flex: 1 ,padding:10,gap:15}}>
+        
         <View style={{justifyContent:"space-between",flexDirection:"row",alignItems:"center"}}><Image size={50} borderRadius={100} source={{
       uri: "https://wallpaperaccess.com/full/317501.jpg"
     }} alt="Alternate Text" />
     
-    <View style={{gap:10,flexDirection:"row",alignItems:"center"}}>
-    <MaterialCommunityIcons name="map-marker" color={'#00512C'} size={25} />
+    <View style={{gap:5,flexDirection:"row",alignItems:"center"}}>
+    <MaterialCommunityIcons name="map-marker" color={'#00512C'} size={15} />
     <Text>Tunis, Tunisia</Text>
     </View>
 
@@ -55,6 +57,7 @@ setCategoryId(item.id)
         }
       }} InputLeftElement={<MaterialCommunityIcons name="magnify" color={'#00512C'} size={15}  style={{right:-10}}/>} />
       </VStack>
+      
       <Text style={{fontWeight:"bold"}}>Categories</Text>
 
       <View style={{flexDirection:"row", gap:100}}>
@@ -74,6 +77,7 @@ setCategoryId(item.id)
       
     
       </View>
+<<<<<<< HEAD
         <View>
     <FlatList
     data = {productsCategory.product}
@@ -109,6 +113,62 @@ setCategoryId(item.id)
            <TouchableOpacity>
             
         <View style={{ borderRadius:10 ,backgroundColor:'white' , width:200,height:252, alignItems:'center',top:20 }}>
+=======
+      <ScrollView>
+      <TouchableOpacity>
+        <View style={{ borderRadius:10 ,backgroundColor:'white' , width:200,height:252, alignItems:'center' }}>
+>>>>>>> b17d49b04b8034a042030982d21af7a47127c99f
+           
+  
+          <Image  borderRadius={10}source={{ 
+      uri: "https://wallpaperaccess.com/full/317501.jpg"
+    }} alt="Alternate Text" size={165} width={180}  />
+<<<<<<< HEAD
+    
+     <View style={{left:-30 , flexDirection:'row', gap:10 }}>
+      <View>
+        
+   <Text style={[styles.bolded,{fontSize:20}]} >Coffee </Text>
+      
+  
+   
+
+  
+=======
+     <View style={{left:-10 , flexDirection:'row', gap:10 }}>
+      <View>
+   <Text style={[styles.bolded,{fontSize:20}]} >Cappuccino </Text>
+>>>>>>> b17d49b04b8034a042030982d21af7a47127c99f
+   <Text>With Sugar</Text>
+
+   <Text style={styles.bolded} >50.000 DT</Text>
+   </View>
+<<<<<<< HEAD
+  <TouchableOpacity style={{backgroundColor:'#00512C' , borderRadius:400 , width:40,height:40,display:"flex",justifyContent:"center" , top:30, left:50}} >
+=======
+  <TouchableOpacity style={{backgroundColor:'#00512C' , borderRadius:400 , width:40,height:40,display:"flex",justifyContent:"center" , top:30}} >
+>>>>>>> b17d49b04b8034a042030982d21af7a47127c99f
+    <Text style={{color:'white' , textAlign:"center",fontSize:20}}>+</Text>
+  </TouchableOpacity>
+
+   </View>
+<<<<<<< HEAD
+  <MaterialCommunityIcons name="cards-heart-outline" color={"red"} size={25}style={{top:-70 ,left:70}}  />
+         
+           </View>
+        
+           </TouchableOpacity>
+=======
+         
+>>>>>>> b17d49b04b8034a042030982d21af7a47127c99f
+           </View>
+           </TouchableOpacity>
+         
+           <Text style={{fontWeight:"bold", top:10}}> Special Offer</Text>
+           
+           <TouchableOpacity>
+            
+        <View style={{ borderRadius:10 ,backgroundColor:'white' , width:200,height:252, alignItems:'center',top:20 }}>
            
   
           <Image  borderRadius={10}source={{ 
@@ -138,7 +198,8 @@ setCategoryId(item.id)
            </View>
         
            </TouchableOpacity>
-           </View>
+           </ScrollView>
+        
       </View>
     );
   }
@@ -158,6 +219,9 @@ selected : {
     borderRadius : 100,
     width : 130,
     marginRight :10
+  },
+  bolded : {
+    fontWeight:"bold"
   }
 })
 
