@@ -25,7 +25,7 @@ export default function App() {
         <Stack.Navigator initialRouteName="onboard" screenOptions={{headerShown:false}}>
           <Stack.Screen name="login" component={Login} />
           <Stack.Screen name="signup" component={SignUp} />
-          <Stack.Screen name="onboard"component={Onboard}/>
+          <Stack.Screen name="onboarding"component={Onboard}/>
           <Stack.Screen name="home"component={Home}/>
         </Stack.Navigator>
       </NavigationContainer>
