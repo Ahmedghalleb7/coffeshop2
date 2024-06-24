@@ -26,7 +26,7 @@ export default function App() {
           <Stack.Screen name="login" component={Login} />
           <Stack.Screen name="signup" component={SignUp} />
           <Stack.Screen name="onboarding"component={Onboard}/>
-          <Stack.Screen name="home"component={Home}/>
+          <Stack.Screen name="homepage"component={Home}/>
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>
