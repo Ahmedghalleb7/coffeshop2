@@ -1,0 +1,1 @@
+export default config = "192.168.43.50"
